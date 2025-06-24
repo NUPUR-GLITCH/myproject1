@@ -1,0 +1,5 @@
+CREATE TABLE donations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    amount DECIMAL(10, 2) NOT NULL,
+    submitted_at DATETIME NOT NULL
+);

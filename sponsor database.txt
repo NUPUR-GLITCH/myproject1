@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS myproject_db;
+USE myproject_db;
+
+CREATE TABLE sponsorship_applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    family_name VARCHAR(255) NOT NULL,
+    number_of_children INT NOT NULL,
+    specific_needs TEXT NOT NULL,
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE child_sponsorships (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    age_range VARCHAR(50),
+    location VARCHAR(255),
+    interests VARCHAR(255),
+    urgency VARCHAR(50),
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
